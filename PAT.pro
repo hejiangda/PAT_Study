@@ -5,4 +5,5 @@ SUBDIRS += \
     A1002_A_Add_B_for_Polynomials \
     A1003_Emergency \
     A1004_Counting_Leaves \
-    A1005_Spell_It_Right
+    A1005_Spell_It_Right \
+    A1006_Sign_In_and_Sign_Out
