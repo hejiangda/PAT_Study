@@ -12,4 +12,5 @@ SUBDIRS += \
     A1009_Product_of_Polynomials \
     A1010_Radix \
     A1011_World_Cup_Betting \
-    A1012_The_Best_Rank
+    A1012_The_Best_Rank \
+    test
