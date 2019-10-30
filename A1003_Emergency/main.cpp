@@ -6,7 +6,7 @@ int n,m,c1,c2;
 // dis[i]表示从出发点到i结点最短路径的路径⻓度
 // num[i]表示从出发点到i结点最短路径的条数
 // w[i]表示从出发点到i点救援队的数⽬之和
-int e[510][510],weight[510],dis[510],num[510],w[510];
+int e[510][510], weight[510],dis[510],num[510],w[510];
 bool visit[510];
 const int inf = 99999999;
 int main(){
@@ -67,7 +67,10 @@ int main(){
                 }else if(dis[u]+e[u][v]==dis[v]){
                     // 从源点到 v 的路条数加上从源点到 u 的条数
                     num[v]=num[v]+num[u];
+                    // 如果直接到该点得到的救援队伍比经过u点再到v的多，更新否则保持原状
+                    // 也就是，可能有多条路径可以从c1到v，之前已经得到了救援队伍数量，若通过u再到v比之前的小就不能更新
                     // 加上 v 点的救援队伍
+                    //
                     if(w[u]+weight[v]>w[v])
                         w[v]=w[u]+weight[v];
                 }
