@@ -1,16 +1,31 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
+
+double poly[10010]={0};
+
 int main(){
-    int a,b;
-    cin>>a>>b;
-    string c=to_string(a+b);
-    for(int i=0;i<c.size();i++){
-        printf("%c",c[i]);
-        if(c[i]=='-')
-            continue;
-        if((i+1)%3==c.size()%3  && i!=c.size()-1)
-            printf(",");
+    int k,n;
+    double a;
+    for(int j=0;j<2;j++){
+        cin>>k;
+        for(int i=0;i<k;i++){
+            cin >> n>>a;
+            poly[n]+=a;
+        }
+    }
+    int cnt=0;
+    for(int i=1000;i>=0;i--)
+        if(poly[i]!=0)
+            cnt++;
+    cout<<cnt;
+    for(int i=1000;i>=0;i--)
+    {
+        if(poly[i]!=0){
+            cout<<" "<<i<<" "<<setprecision(1);
+            cout.setf(ios::fixed,ios::floatfield);
+            cout<<poly[i];
+        }
     }
     return 0;
 }
