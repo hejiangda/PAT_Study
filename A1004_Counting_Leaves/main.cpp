@@ -1,5 +1,5 @@
 // 给出一棵家谱树，找出每一层中没有孩子的结点个数
-//
+// 注意：不是二叉树！！而是普通的树
 #include <iostream>
 #include <vector>
 #include <algorithm>
