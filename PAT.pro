@@ -13,4 +13,5 @@ SUBDIRS += \
     A1010_Radix \
     A1011_World_Cup_Betting \
     A1012_The_Best_Rank \
+    A1013_Battle_Over_Cities \
     test
