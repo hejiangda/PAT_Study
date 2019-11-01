@@ -15,4 +15,5 @@ SUBDIRS += \
     A1012_The_Best_Rank \
     A1013_Battle_Over_Cities \
     A1014_Waiting_in_Line \
+    A1015_Reversible_Prime \
     test
