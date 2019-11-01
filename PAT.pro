@@ -14,4 +14,5 @@ SUBDIRS += \
     A1011_World_Cup_Betting \
     A1012_The_Best_Rank \
     A1013_Battle_Over_Cities \
+    A1014_Waiting_in_Line \
     test
