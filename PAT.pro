@@ -17,4 +17,5 @@ SUBDIRS += \
     A1014_Waiting_in_Line \
     A1015_Reversible_Prime \
     A1016_Phone_Bill \
+    A1017_Queueing_at_Bank \
     test

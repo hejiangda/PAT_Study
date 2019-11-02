@@ -1,30 +1,39 @@
-// 4 5 6
 #include <iostream>
 
 using namespace std;
 
+double res[2010];
+double a[1010];
 int main(){
-    int n;
-    cin>>n;
-
-    int sum=0;
-    int floor=0;
-
-    for(int i=0;i<n;i++){
-        int tmp;
-        cin>>tmp;
-        if(tmp>floor){
-            sum+=6*(tmp-floor);
-            floor=tmp;
-            sum+=5;
-        }
-
-        if(tmp<floor){
-            sum+=4*(floor-tmp);
-            floor=tmp;
-            sum+=5;
+    int k;
+    cin>>k;
+    for(int i=0;i<k;i++){
+        int e;
+        cin>>e;
+        cin>>a[e];
+    }
+    cin>>k;
+    for(int i=0;i<k;i++){
+        int e;
+        cin>>e;
+        double c;
+        cin>>c;
+        for(int i=1000;i>=0;i--){
+            if(a[i]!=0.0){
+                res[i+e]+=c*a[i];
+            }
         }
     }
-    cout <<sum;
+    int cnt=0;
+    for(int i=2000;i>=0;i--){
+        if(res[i]!=0.0)cnt++;
+    }
+    cout<<cnt;
+    for(int i=2000;i>=0;i--){
+        if(res[i]!=0.0){
+            cout<<" "<<i<<" ";
+            printf("%.1f",res[i]);
+        }
+    }
 
 }
