@@ -16,4 +16,5 @@ SUBDIRS += \
     A1013_Battle_Over_Cities \
     A1014_Waiting_in_Line \
     A1015_Reversible_Prime \
+    A1016_Phone_Bill \
     test
