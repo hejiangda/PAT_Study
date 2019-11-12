@@ -1,39 +1,22 @@
-#include <iostream>
+// n windows n lines
+// m customers a line
+// yellow line
+// nm+1 ... wait in a line behind
+// customer choose shortest line & smallest number
+// customer i take ti minutes
+// first n customers are served at 8.am
 
-using namespace std;
+// given processing time pre customer
+// tell the exact time a customer has done
 
-double res[2010];
-double a[1010];
-int main(){
-    int k;
-    cin>>k;
-    for(int i=0;i<k;i++){
-        int e;
-        cin>>e;
-        cin>>a[e];
-    }
-    cin>>k;
-    for(int i=0;i<k;i++){
-        int e;
-        cin>>e;
-        double c;
-        cin>>c;
-        for(int i=1000;i>=0;i--){
-            if(a[i]!=0.0){
-                res[i+e]+=c*a[i];
-            }
-        }
-    }
-    int cnt=0;
-    for(int i=2000;i>=0;i--){
-        if(res[i]!=0.0)cnt++;
-    }
-    cout<<cnt;
-    for(int i=2000;i>=0;i--){
-        if(res[i]!=0.0){
-            cout<<" "<<i<<" ";
-            printf("%.1f",res[i]);
-        }
-    }
+// input: n,m,k,q
+// n window num
+// m max capacity pre line inside yellow line
+// k customers number
+// q customer queries
 
-}
+// output: for q customers print finished time
+// HH:MM
+// customers who cannot be served before 17. output Sorry
+int main() {}
+

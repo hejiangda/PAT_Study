@@ -18,4 +18,8 @@ SUBDIRS += \
     A1015_Reversible_Prime \
     A1016_Phone_Bill \
     A1017_Queueing_at_Bank \
+    A1018_Public_Bike_Management \
+    A1019_General_Palindromic_Number \
+    A1020_Tree_Traversals \
+    A1021_Deepest_Root \
     test
