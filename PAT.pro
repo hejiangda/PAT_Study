@@ -22,4 +22,5 @@ SUBDIRS += \
     A1019_General_Palindromic_Number \
     A1020_Tree_Traversals \
     A1021_Deepest_Root \
+    A1022_DIgital_Library \
     test
