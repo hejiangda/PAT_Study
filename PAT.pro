@@ -23,4 +23,6 @@ SUBDIRS += \
     A1020_Tree_Traversals \
     A1021_Deepest_Root \
     A1022_DIgital_Library \
+    A1023_Have_Fun_with_Numbers \
+    A1024_Palindromic_Number \
     test
