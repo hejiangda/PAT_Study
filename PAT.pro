@@ -25,4 +25,5 @@ SUBDIRS += \
     A1022_DIgital_Library \
     A1023_Have_Fun_with_Numbers \
     A1024_Palindromic_Number \
+    A1025_PAT_Ranking \
     test
