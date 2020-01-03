@@ -26,4 +26,6 @@ SUBDIRS += \
     A1023_Have_Fun_with_Numbers \
     A1024_Palindromic_Number \
     A1025_PAT_Ranking \
+    A1026_Table_Tennis \
+    A1027_Colors_in_Mars \
     test
