@@ -34,3 +34,5 @@
 # Qt
 *.user*
 
+# test
+test/
